@@ -78,8 +78,15 @@ ul {
   margin-right: auto;
   padding-left: 16px;
   padding-right: 16px;
+  overflow-x: scroll;
 
   outline: dashed 1px teal;
+}
+
+@media screen and (min-width: 320px) {
+  .container {
+    overflow-x: hidden;
+  }
 }
 
 /* Tablet style & > */
@@ -157,17 +164,11 @@ ul {
   align-items: center;
 }
 
-@media only screen and (max-width: 427px) {
+@media only screen and (max-width: 767px) {
   .heder-container .container {
     justify-content: space-between;
   }
 }
-
-/* @media only screen and (max-width: 1157px) and (max-width: 1157px) {
-  .heder-container .container {
-   
-  }
-} */
 
 /* Logo */
 .logo {
@@ -1251,6 +1252,11 @@ ul {
   gap: 56px;
 }
 
+@media only screen and (max-width: 396px) {
+  .mobile-socials {
+    gap: 30px;
+  }
+}
 .mobile-contacts {
   display: flex;
   gap: 40px;
