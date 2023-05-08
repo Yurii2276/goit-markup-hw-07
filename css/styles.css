@@ -79,7 +79,7 @@ ul {
   padding-left: 16px;
   padding-right: 16px;
 
-  outline: dashed 2px teal;
+  /* outline: dashed 2px teal; */
 }
 
 /* Tablet style & > */
@@ -130,6 +130,13 @@ ul {
   gap: 72px;
 }
 
+@media only screen and (min-width: 768px) {
+  .card-set {
+    column-gap: 72px;
+    row-gap: 24px;
+  }
+}
+
 @media only screen and (min-width: 1158px) {
   .card-set {
     gap: var(--indent);
@@ -140,12 +147,19 @@ ul {
   width: 264px;
 }
 
-/* .card-set-items {
-  width: calc(
-    (100% - (var(--indent-items) - 1) * var(--indent)) / var(--indent-items)
-  );
+@media only screen and (max-width: 767px) {
+  .cont-prinsp-work .card-set-items {
+    width: 356px;
+  }
 }
-} */
+
+@media only screen and (min-width: 1158px) {
+  .card-set-items {
+    width: calc(
+      (100% - (var(--indent-items) - 1) * var(--indent)) / var(--indent-items)
+    );
+  }
+}
 
 /* delete poit in UL */
 .list {
@@ -360,13 +374,68 @@ ul {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/img-name.jpg);
+    url(../images/herro/Dark-bgmob@1x.jpg);
+
   max-width: 1440px;
   max-height: 600px;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .herro {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/herro/Dark-bgmob@2x.jpg);
+  }
+}
+
+@media only screen and (min-width: 429px) and (max-width: 768px) {
+  .herro {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/herro/Dark-bg-tab@1x.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .herro {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/herro/Dark-bg-tab@2x.jpg);
+    }
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .herro {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/herro/desktop@1x.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .herro {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/herro/desktop@2x.jpg);
+    }
+  }
 }
 
 .herro-title {

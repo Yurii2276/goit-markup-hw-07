@@ -244,28 +244,55 @@
           <h2 class="section-title">What are we doing</h2>
           <ul class="list card-set">
             <li class="card-set-items">
-              <img
-                src="./images/comp.jpg"
-                alt="Foto comhuter"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/works/comp1@1x.jpg 1x,
+                    ./images/works/comp1@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/works/comp1@1x.jpg"
+                  alt="Foto comhuter"
+                  width="360"
+                  height="300"
+                />
+              </picture>
             </li>
             <li class="card-set-items">
-              <img
-                src="./images/phons.jpg"
-                alt="Foto phons"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/works/phons@1x.jpg 1x,
+                    ./images/works/phons@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/works/phons@1x.jpg"
+                  alt="Foto phons"
+                  width="360"
+                  height="300"
+                />
+              </picture>
             </li>
             <li class="card-set-items">
-              <img
-                src="./images/hand_with_phone.jpg"
-                alt="Foto hand with phons"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/works/hand@1x.jpg 1x,
+                    ./images/works/hand@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/works/hand@1x.jpg"
+                  alt="Foto hand with phons"
+                  width="360"
+                  height="300"
+                />
+              </picture>
             </li>
           </ul>
         </div>
@@ -279,11 +306,16 @@
           <ul class="list card-set">
             <li class="style-img card-set-items">
               <img
-                src="./images/Marc_Guerro.jpg"
+                srcset="
+                  ./images/team/guerrero@1x.jpg 1x,
+                  ./images/team/guerrero@2x.jpg 2x
+                "
+                src="./images/team/guerrero@1x.jpg"
                 alt="Foto Marc_Guerro"
                 width="264"
                 height="260"
               />
+
               <div class="team-wrapper">
                 <h3 class="name">Mark Guerrero</h3>
                 <p class="profession">Product Designer</p>
@@ -349,7 +381,11 @@
             </li>
             <li class="style-img card-set-items">
               <img
-                src="./images/Tom_Ford.jpg"
+                srcset="
+                  ./images/team/ford@1x.jpg 1x,
+                  ./images/team/ford@2x.jpg 2x
+                "
+                src="./images/team/ford@1x.jpg"
                 alt="Foto Tom_Ford"
                 width="264"
                 height="260"
@@ -420,7 +456,11 @@
             </li>
             <li class="style-img card-set-items">
               <img
-                src="./images/Cfmilla_Garcia.jpg"
+                srcset="
+                  ./images/team/garcia@1x.jpg 1x,
+                  ./images/team/garcia@2x.jpg 2x
+                "
+                src="./images/team/garcia@1x.jpg"
                 alt="Foto Cfmilla_Garcia"
                 width="264"
                 height="260"
@@ -490,7 +530,11 @@
             </li>
             <li class="style-img card-set-items">
               <img
-                src="./images/Daniel_Wilson.jpg"
+                srcset="
+                  ./images/team/wilson@1x.jpg 1x,
+                  ./images/team/wilson@2x.jpg 2x
+                "
+                src="./images/team/wilson@1x.jpg"
                 alt="Foto Daniel_Wilson"
                 width="264"
                 height="260"
@@ -700,7 +744,6 @@
           <p class="titel-subscribe">Subscribe</p>
 
           <form class="flex-entermail-and-btn">
-            <label for="email"></label>
             <input
               class="input-footer"
               type="email"
