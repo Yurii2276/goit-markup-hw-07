@@ -72,21 +72,14 @@ ul {
 
 .container {
   /* Phone style & >*/
-  /* min-width: 320px; */
+  min-width: 320px;
   max-width: 428px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 16px;
   padding-right: 16px;
-  overflow-x: scroll;
 
-  outline: dashed 1px teal;
-}
-
-@media screen and (min-width: 320px) {
-  .container {
-    overflow-x: hidden;
-  }
+  outline: dashed 2px teal;
 }
 
 /* Tablet style & > */
@@ -132,6 +125,7 @@ ul {
 .card-set {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: var(--indent);
 }
 
@@ -156,7 +150,6 @@ ul {
   border-bottom: solid 1px var(--btn-secondary-color);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-  background-color: aqua;
 }
 
 .heder-container .container {
@@ -370,12 +363,17 @@ ul {
   margin-bottom: 48px;
 
   color: var(--primari-whitecolor);
-
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
+}
+
+@media only screen and (min-width: 768px) {
+  .herro-title {
+    font-size: 56px;
+    line-height: 1.07;
+  }
 }
 
 .btn-herro-container {
@@ -670,7 +668,19 @@ ul {
 }
 
 .cont-prinsp-work {
-  --indent-items: 4;
+  --indent-items: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .cont-prinsp-work {
+    --indent-items: 2;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .cont-prinsp-work {
+    --indent-items: 4;
+  }
 }
 
 .section .desc {
@@ -680,7 +690,7 @@ ul {
 }
 
 .card-princp {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   width: 264px;
@@ -689,6 +699,12 @@ ul {
 
   background-color: var(--card-prinspl-color);
   border-radius: 4px;
+}
+
+@media only screen and (min-width: 1158px) {
+  .card-princp {
+    display: flex;
+  }
 }
 
 /* .icon-princ {
@@ -735,10 +751,24 @@ ul {
 */
 
 .team {
-  --indent-items: 4;
+  --indent-items: 1;
 
   background-color: var(--second-white-text);
 }
+
+@media only screen and (min-width: 768px) {
+  .team {
+    --indent-items: 2;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .team {
+    --indent-items: 4;
+    --indent: 24px;
+  }
+}
+
 .section-tm-title {
   color: var(--title-text-color);
 
@@ -1212,7 +1242,7 @@ ul {
   padding: 80px 32px 32px;
   background-color: var(--primari-whitecolor);
   z-index: 999;
-
+  overflow: scroll;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 }
