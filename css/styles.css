@@ -1063,16 +1063,9 @@ ul {
 
   /* outline: 2px dashed  teal; */
 }
-
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1157px) {
   .customer-linc {
-    width: 190px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .customer-linc {
-    width: 168px;
+    width: 100%;
   }
 }
 
@@ -1287,6 +1280,12 @@ ul {
 @media only screen and (max-width: 767px) {
   .input-footer {
     width: 398px;
+  }
+}
+
+@media only screen and (max-width: 398px) {
+  .input-footer {
+    width: 100%;
   }
 }
 
@@ -1622,4 +1621,23 @@ ul {
 
 .mobile-menu .current {
   color: var(--btn-hover-color);
+}
+
+.mobil-meny-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--btn-secondary-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+  transition: background-color var(--transition-duration)
+      var(--transition-timing-function),
+    fill var(--transition-duration) var(--transition-timing-function);
 }
